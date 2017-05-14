@@ -1265,3 +1265,724 @@ Processing by CommentsController#create as HTML
 Completed 200 OK in 117ms (Views: 92.3ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-05-08 03:42:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 15ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2017-05-08 03:42:49 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (3.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 303ms (Views: 293.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2017-05-08 03:43:12 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2017-05-08 03:43:27 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2017-05-14 04:28:54 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 04:29:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/show/1" for 127.0.0.1 at 2017-05-14 04:29:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts/show/1"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.6ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.8ms)
+Started GET "/posts/show/2" for 127.0.0.1 at 2017-05-14 04:29:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts/show/2"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.7ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.9ms)
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started GET "/posts/show/3" for 127.0.0.1 at 2017-05-14 04:33:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/posts/show/3"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.8ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.2ms)
+Started GET "/posts/3" for 127.0.0.1 at 2017-05-14 04:33:57 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 249ms (Views: 238.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2017-05-14 05:28:30 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 06:20:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 309ms (Views: 292.0ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/posts/3" for 127.0.0.1 at 2017-05-14 06:20:26 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H54PRtzdKOvnqprvbRMdhRVTlm8LcQ/t0xY3n1BHIPm+hENNIopdFPruXbSHXqYO4CQoewr1Z3zfHm8/UyXWfQ==", "id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (75.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 83ms (ActiveRecord: 75.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 06:20:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-05-14 06:20:37 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (11.8ms)
+  Rendered posts/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-05-14 06:21:14 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gr2TZuQwoaCMshaqnBcWeF1CpXWDxo0sNaCY25SQPMsDdaew1uL7wPHptTmDn79PHOojfAMdgCZ+CXQ9n7WTeA==", "post"=>{"title"=>"Cloud-based Widgets", "body"=>"Blah,blah,blah"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Cloud-based Widgets"], ["body", "Blah,blah,blah"], ["created_at", 2017-05-14 10:21:14 UTC], ["updated_at", 2017-05-14 10:21:14 UTC]]
+  [1m[35m (39.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 43ms (ActiveRecord: 39.6ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 06:21:14 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 06:22:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 06:22:28 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/comments" for 127.0.0.1 at 2017-05-14 06:22:49 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"comments"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=comments):
+  
+app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.1ms)
+Started GET "/comments" for 127.0.0.1 at 2017-05-14 06:23:07 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 33ms (Views: 28.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/comments/4/edit" for 127.0.0.1 at 2017-05-14 06:23:50 -0400
+Processing by CommentsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered comments/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/comments/4" for 127.0.0.1 at 2017-05-14 06:24:37 -0400
+Processing by CommentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pb6nu3oZvUWZwhtXgQgnE3XYyzIXRt5TjEmTZzDgGLgMlyRBv1h+5N9/zk4mbUAfb88pf0fSwH4V5EyK7SYb1A==", "comment"=>{"post_id"=>"4", "body"=>"This is great!"}, "commit"=>"Update Comment", "id"=>"4"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/_form.html.erb (2.0ms)
+  Rendered comments/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 51ms (Views: 27.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments/4" for 127.0.0.1 at 2017-05-14 06:26:28 -0400
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/comments/4" for 127.0.0.1 at 2017-05-14 06:26:43 -0400
+Processing by CommentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pb6nu3oZvUWZwhtXgQgnE3XYyzIXRt5TjEmTZzDgGLgMlyRBv1h+5N9/zk4mbUAfb88pf0fSwH4V5EyK7SYb1A==", "comment"=>{"post_id"=>"4", "body"=>"This is great!"}, "commit"=>"Update Comment", "id"=>"4"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "comments" SET "post_id" = ?, "body" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["post_id", 4], ["body", "This is great!"], ["updated_at", 2017-05-14 10:26:43 UTC], ["id", 4]]
+  [1m[35m (72.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/comments/4
+Completed 302 Found in 88ms (ActiveRecord: 73.7ms)
+
+
+Started GET "/comments/4" for 127.0.0.1 at 2017-05-14 06:26:43 -0400
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2017-05-14 06:26:59 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments/3/edit" for 127.0.0.1 at 2017-05-14 06:27:03 -0400
+Processing by CommentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered comments/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/comments/3" for 127.0.0.1 at 2017-05-14 06:27:28 -0400
+Processing by CommentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"suvMTF06mf46o48NeXWyp68AeSyrcqvx2o6mfNXEVQrclGZpjTRZGc4HdE3a3ellIbzRtUSRvD4MmvNax7L+BQ==", "comment"=>{"post_id"=>"4", "body"=>"Is it secure?"}, "commit"=>"Update Comment", "id"=>"3"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "comments" SET "post_id" = ?, "body" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["post_id", 4], ["body", "Is it secure?"], ["updated_at", 2017-05-14 10:27:28 UTC], ["id", 3]]
+  [1m[35m (85.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/comments/3
+Completed 302 Found in 93ms (ActiveRecord: 86.6ms)
+
+
+Started GET "/comments/3" for 127.0.0.1 at 2017-05-14 06:27:28 -0400
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2017-05-14 06:27:45 -0400
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-14 06:57:12 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 06:57:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-05-14 06:57:57 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-05-14 06:58:29 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pYxnb00B9dynYBKK0B/TNXiqUL/7D0YW/jK4VpgvXDHXgVLj+Zdtw/GI9k0yNZ7lEovS383MBIQUSYHUUUSww==", "post"=>{"title"=>"Big-data Nano Widgets", "body"=>"Blab,blab,blab"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Big-data Nano Widgets"], ["body", "Blab,blab,blab"], ["created_at", 2017-05-14 10:58:29 UTC], ["updated_at", 2017-05-14 10:58:29 UTC]]
+  [1m[35m (46.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 51ms (ActiveRecord: 46.8ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2017-05-14 06:58:29 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 06:58:51 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-05-14 06:58:57 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-05-14 07:00:21 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBsoB09Ft+qHwaSExwaaOWZrPMCmW/iQkto3UC8TzZMJ0xzRfZftivqaBxfYjjMOJ8O6ySaA9ZrZc9u2JDZiIA==", "post"=>{"title"=>"Widget Preview", "body"=>"we'll be unveiling our latest at the International Widget Conference"}, "commit"=>"Create Post"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Widget Preview"], ["body", "we'll be unveiling our latest at the International Widget Conference"], ["created_at", 2017-05-14 11:00:21 UTC], ["updated_at", 2017-05-14 11:00:21 UTC]]
+  [1m[35m (257.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 260ms (ActiveRecord: 257.7ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2017-05-14 07:00:22 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 07:00:31 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 07:00:59 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-14 07:09:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 14ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 07:09:36 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 263ms (Views: 259.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 07:09:42 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 07:10:30 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.9ms)
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (The `div_for` method has been removed from Rails. To continue using it, add the `record_tag_helper` gem to your Gemfile:
+  gem 'record_tag_helper', '~> 1.0'
+Consult the Rails upgrade guide for details.):
+    1: <%= div_for @post do %>
+    2: <h2><%= h(@post.title) %></h2>
+    3: <%= simple_format h(@post.body) %>
+    4: <% end %>
+  
+app/views/posts/_post.html.erb:1:in `_app_views_posts__post_html_erb__850604558372655609_47049200641360'
+app/views/posts/show.html.erb:3:in `_app_views_posts_show_html_erb__338104170360740892_70331230366400'
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.5ms)
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 07:26:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 27ms (Views: 20.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 07:26:30 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 07:45:39 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.0ms)
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (The `div_for` method has been removed from Rails. To continue using it, add the `record_tag_helper` gem to your Gemfile:
+  gem 'record_tag_helper', '~> 1.0'
+Consult the Rails upgrade guide for details.):
+    1: <%= div_for @post do %>
+    2: <h2><%= h(@post.title) %></h2>
+    3: <%= simple_format h(@post.body) %>
+    4: <% end %>
+  
+app/views/posts/_post.html.erb:1:in `_app_views_posts__post_html_erb__850604558372655609_70331306561700'
+app/views/posts/show.html.erb:3:in `_app_views_posts_show_html_erb__338104170360740892_70331306737120'
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.4ms)
+Started GET "/posts" for 127.0.0.1 at 2017-05-14 08:11:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 308ms (Views: 296.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 08:11:33 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.4ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  Rendered collection of comments/_comment.html.erb [2 times] (3.6ms)
+  Rendered posts/show.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 58ms (Views: 52.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 11:52:13 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/farzaneh/blog/app/views/posts/show.html.erb:9: syntax error, unexpected tLABEL
+...for[@post,Comment.new], remote:true  do |f| @output_buffer.s...
+...                               ^
+/home/farzaneh/blog/app/views/posts/show.html.erb:23: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/posts/show.html.erb:9: syntax error, unexpected tLABEL
+app/views/posts/show.html.erb:23: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 11:53:07 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/farzaneh/blog/app/views/posts/show.html.erb:9: syntax error, unexpected tLABEL
+...for(@post,Comment.new), remote:true  do |f| @output_buffer.s...
+...                               ^
+/home/farzaneh/blog/app/views/posts/show.html.erb:23: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/posts/show.html.erb:9: syntax error, unexpected tLABEL
+app/views/posts/show.html.erb:23: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.7ms)
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 11:54:09 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.9ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  Rendered collection of comments/_comment.html.erb [2 times] (0.9ms)
+  Rendered posts/show.html.erb within layouts/application (377.2ms)
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `post_comments_path' for #<#<Class:0x0056443f4cf980>:0x007fcbc8014910>
+Did you mean?  posts_path):
+     6:    <%= render @post.comments.reverse %>
+     7:  </div>
+     8: 
+     9:  <%= form_for [@post,Comment.new], remote:true  do |f| %>
+    10:    <p>
+    11:      <%= f.label :body , "New Comment" %><br/>
+    12:      <%= f.text_area :body %>
+  
+app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb__1890982617284901215_70256605309880'
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/farzaneh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.9ms)
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 12:12:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (3.1ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  Rendered collection of comments/_comment.html.erb [2 times] (5.1ms)
+  Rendered posts/show.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 329ms (Views: 307.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-05-14 12:43:52 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.1ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  Rendered collection of comments/_comment.html.erb [2 times] (3.8ms)
+  Rendered posts/show.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 65ms (Views: 53.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/posts/4/comments" for 127.0.0.1 at 2017-05-14 12:44:36 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"Testing JavaScript"}, "commit"=>"Add Comment", "post_id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("post_id", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["body", "Testing JavaScript"], ["created_at", 2017-05-14 16:44:36 UTC], ["updated_at", 2017-05-14 16:44:36 UTC]]
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  Rendering comments/create.js.erb
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/create.js.erb (1.6ms)
+Completed 200 OK in 27ms (Views: 3.7ms | ActiveRecord: 17.6ms)
+
+
